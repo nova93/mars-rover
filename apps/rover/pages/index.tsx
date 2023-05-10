@@ -1,12 +1,13 @@
-import { Button } from "ui";
+import { NextPage } from "next";
+import Layout from "../components/Layout";
 
-export default function Web() {
+const HomePage: NextPage = () => {
   return (
-    <div>
-      <h1>Rover</h1>
+    <Layout>
       <iframe src="http://localhost:3009" />
       <iframe src="http://localhost:3010" />
-      <Button />
-    </div>
+    </Layout>
   );
-}
+};
+
+export default HomePage;

@@ -6,22 +6,27 @@
     "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint && stylelint './**/*.{ts,tsx}'",
     "test": "jest"
   },
   "dependencies": {
     "next": "^13.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6",
     "ui": "*"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "@types/styled-components": "^5.1.26",
     "eslint": "7.32.0",
     "eslint-config-custom": "*",
     "jest": "^29.4.1",
+    "postcss-styled-syntax": "^0.4.0",
+    "stylelint": "^15.6.1",
+    "stylelint-config-standard": "^33.0.0",
     "tsconfig": "*",
     "typescript": "^4.5.3"
   }
