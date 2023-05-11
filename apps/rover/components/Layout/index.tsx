@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
 
 const Main = styled.main`
   height: 100vh;
+  height: 100svh;
   display: grid;
   grid-template-columns: 1fr 300px;
 `;
